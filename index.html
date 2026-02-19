@@ -32,6 +32,13 @@
         p {
             margin: 0.8em 0;
         }
+        ul {
+            margin: 0.5em 0;
+            padding-left: 1.5em;
+        }
+        li {
+            margin: 0.3em 0;
+        }
         .highlight {
             background: #e8f5e9;
             border-left: 4px solid #4caf50;
@@ -48,26 +55,52 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="updated">Chazarah Tracker &mdash; Last updated: February 4, 2026</p>
+    <p class="updated">Chazarah Tracker &mdash; Last updated: February 19, 2026</p>
 
     <div class="highlight">
-        <strong>In short:</strong> Chazarah Tracker does not collect, store, transmit, or share any personal data. Everything stays on your device.
+        <strong>In short:</strong> Chazarah Tracker works fully offline by default. If you choose to sign in, we store only what is needed to sync your data and enable group features. We never sell your data or use third-party analytics.
     </div>
 
-    <h2>Data Collection</h2>
-    <p>Chazarah Tracker is a fully offline application. We do not collect any personal information or usage data. The app does not connect to the internet for any purpose.</p>
+    <h2>Offline by Default</h2>
+    <p>Chazarah Tracker works entirely offline without an account. All your learning progress, review schedules, tracks, and settings are stored locally on your device. You are never required to sign in.</p>
+
+    <h2>Optional Account &amp; Cloud Sync</h2>
+    <p>If you choose to create an account (via email/password, Google Sign-In, or Apple Sign-In), we collect and store:</p>
+    <ul>
+        <li><strong>Email address</strong> &mdash; used for authentication and account recovery</li>
+        <li><strong>Authentication provider</strong> &mdash; which sign-in method you used</li>
+        <li><strong>Learning data</strong> &mdash; your tracks, schedules, and review history are synced to the cloud so you can back up and restore your data</li>
+    </ul>
+    <p>This data is stored securely using <a href="https://supabase.com" target="_blank">Supabase</a> (hosted on Amazon Web Services). We do not store your password directly &mdash; authentication is handled securely by Supabase Auth.</p>
+
+    <h2>Groups (Chaburos)</h2>
+    <p>If you join or create a group, the following additional data is shared with other group members:</p>
+    <ul>
+        <li>Your display name</li>
+        <li>Your learning progress within the group</li>
+    </ul>
+    <p>Group data is visible only to members of that group.</p>
 
     <h2>Data Storage</h2>
-    <p>All app data &mdash; including your learning progress, review schedules, tracks, and settings &mdash; is stored locally on your device using an on-device database. This data never leaves your device.</p>
+    <p>All app data is stored locally on your device using an on-device database. If you sign in, a copy of your data is also synced to our cloud database for backup and cross-device access. You can use the app without an account, and your local data remains on your device.</p>
 
     <h2>Third-Party Services</h2>
-    <p>The app does not use any third-party services, analytics tools, advertising networks, or tracking technologies.</p>
+    <p>If you sign in, the app uses the following third-party services:</p>
+    <ul>
+        <li><strong>Supabase</strong> &mdash; authentication, database, and real-time sync</li>
+        <li><strong>Google Sign-In</strong> (Android) &mdash; if you choose to sign in with Google</li>
+        <li><strong>Apple Sign-In</strong> (iOS) &mdash; if you choose to sign in with Apple</li>
+    </ul>
+    <p>We do not use any advertising networks, analytics tools, or tracking technologies.</p>
 
     <h2>Permissions</h2>
     <p>The app may request permission to send local notifications to remind you of upcoming reviews. No data is sent externally as part of this feature.</p>
 
+    <h2>Data Deletion</h2>
+    <p>You can delete your account and all associated cloud data at any time from the app settings. Local data on your device can be removed by uninstalling the app.</p>
+
     <h2>Children's Privacy</h2>
-    <p>Because the app collects no data whatsoever, it is safe for users of all ages. We do not knowingly collect any information from anyone, including children under 13.</p>
+    <p>We do not knowingly collect personal information from children under 13. The app can be used fully offline without an account, which requires no personal information.</p>
 
     <h2>Changes to This Policy</h2>
     <p>If we update this privacy policy, the changes will be posted on this page with a revised date.</p>
